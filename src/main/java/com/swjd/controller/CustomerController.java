@@ -18,6 +18,7 @@ public class CustomerController {
 
     @RequestMapping("/toMain")
     public  String toMain(Model model){
+        System.out.println("123");
         List<Customer> list=new ArrayList<>();
         list=customerService.getList();
         Customer customer=new Customer();
